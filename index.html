@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    
+    
+    <p id="p1"></p>
+    <button onclick="disp(this)" name="Kshitiz">Show</button>
+    
+    
+    
+
+  </body>
+  <script>
+    var myArray = [
+        {'Id':'1', 'name':'john','salary':'8000'},
+        {'Id':'2', 'name':'Mark','salary':'6000'},
+        {'Id':'3', 'name':'Shreya','salary':'7000'},
+        {'Id':'4', 'name':'jack','salary':'9000'},
+
+    ]
+    function disp(x){
+      var src =
+        "<table border=1><tr><th>Id</th><th>name</th><th>salary</th></tr>";
+        for(i =0 ;i < myArray.length;i++) {
+          console.log("x "+x.name);
+          src += "<tr><td>"+ this.Id +"</td><td>"+this.name+"</td><td>"+ this.salary + "</td></tr>";
+        } 
+        src+="</table>";
+        
+        document.getElementById("p1").innerHTML = src;
+    }
+
+    
+
+
+    
+    
+    
+    
+    
+
+  </script>
+</html>
